@@ -1,0 +1,11 @@
+C:\Users\GOSTE\source\repos\Presencial\bin\Debug\Presencial.exe.config
+C:\Users\GOSTE\source\repos\Presencial\bin\Debug\Presencial.exe
+C:\Users\GOSTE\source\repos\Presencial\bin\Debug\Presencial.pdb
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\EditorDeTexto.csprojAssemblyReference.cache
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\Presencial.Form1.resources
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\Presencial.Properties.Resources.resources
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\EditorDeTexto.csproj.GenerateResource.cache
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\Presencial.exe
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\Presencial.pdb
+C:\Users\GOSTE\source\repos\Presencial\obj\Debug\Presencial.Form2.resources
