@@ -15,7 +15,7 @@ namespace Presencial
     {
 
         Form2 f2;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -24,27 +24,12 @@ namespace Presencial
         {
 
         }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Title = "Guardar archivo";
-            saveFileDialog1.FileName = "";
-            saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Tdos los archivos (*.*)|*.*";
-            saveFileDialog1.ShowDialog();
-        }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        private void abrir()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Title = "Abrir archivo";
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Archivos rtf (*.rtf)|*.rtf|Todos los archivos (*.*)|*.*";
+            openFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|  Archivos jpg (*.jpg)|*.jpg|Archivos png (*.png)|*.png|Todos los archivos (*.*)|*.*";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -56,37 +41,26 @@ namespace Presencial
                 {
                     richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
                 }
+                else if (openFileDialog1.FileName.EndsWith("jpg"))
+                {
+                    var imagen = Image.FromFile(openFileDialog1.FileName);
+                    Clipboard.SetImage(imagen);
+                    richTextBox1.Paste();
+                }
+                else if (openFileDialog1.FileName.EndsWith("png"))
+                {
+                    var imagen = Image.FromFile(openFileDialog1.FileName);
+                    Clipboard.SetImage(imagen);
+                    richTextBox1.Paste();
+                }
             }
         }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (richTextBox1.Text.Trim() != "")
-            {
-                DialogResult r = MessageBox.Show("¿ Desea guardar los cambios hechos ?", "Editor de texto", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-                if (r == DialogResult.No)
-                {
-                    richTextBox1.Clear();
-                }
-                if (r == DialogResult.Yes) {
-                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-                    saveFileDialog1.Title = "Guardar archivo";
-                    saveFileDialog1.FileName = "";
-                    saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Tdos los archivos (*.*)|*.*";
-                    grabar();
-                }
-            }   
-        }
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            f2 = new Form2();
-            f2.Show();
-            
-
-        }
-
         private void grabar()
         {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Title = "Guardar archivo";
+            saveFileDialog1.FileName = "";
+            saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Archivos rtf (*.rtf)|*.rtf|Archivos jpg (*.jpg)|*.jpg|Archivos png (*.png)|*.png|Todos los archivos (*.*)|*.*";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 if (System.IO.File.Exists(saveFileDialog1.FileName))
@@ -108,15 +82,45 @@ namespace Presencial
                     txtguardar.Close();
                 }
             }
+        }
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            grabar();
+        }
 
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            abrir();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Trim() != "")
+            {
+                DialogResult r = MessageBox.Show("¿ Desea guardar los cambios hechos ?", "Editor de texto", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (r == DialogResult.No)
+                {
+                    richTextBox1.Clear();
+                }
+                if (r == DialogResult.Yes)
+                {
+                    grabar();
+                }
+            }   
+        }
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            f2 = new Form2();
+            f2.Show();
         }
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Title = "Guardar archivo";
-            saveFileDialog1.FileName = "";
-            saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Tdos los archivos (*.*)|*.*";
             grabar();
         }
 
@@ -142,7 +146,6 @@ namespace Presencial
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog1 = new FontDialog();
-            fontDialog1.ShowDialog();
 
             if (fontDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -158,7 +161,6 @@ namespace Presencial
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog1 = new ColorDialog();
-            colorDialog1.ShowDialog();
 
             if(colorDialog1.ShowDialog() == DialogResult.OK)
             {
