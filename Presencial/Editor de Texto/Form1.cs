@@ -6,13 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 
 namespace Presencial
 {
     public partial class Form1 : Form
     {
-        Form2 f2 = new Form2();
+
+        Form2 f2;
+        
         public Form1()
         {
             InitializeComponent();
@@ -42,14 +45,14 @@ namespace Presencial
             openFileDialog1.Title = "Abrir archivo";
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Archivos rtf (*.rtf)|*.rtf|Todos los archivos (*.*)|*.*";
-            openFileDialog1.ShowDialog();
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 if (openFileDialog1.FileName.EndsWith("txt"))
                 {
                     richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
-                } else if (openFileDialog1.FileName.EndsWith("rtf"))
+                }
+                else if (openFileDialog1.FileName.EndsWith("rtf"))
                 {
                     richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
                 }
@@ -70,13 +73,41 @@ namespace Presencial
                     saveFileDialog1.Title = "Guardar archivo";
                     saveFileDialog1.FileName = "";
                     saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Tdos los archivos (*.*)|*.*";
-                    saveFileDialog1.ShowDialog();
+                    grabar();
                 }
             }   
         }
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            f2 = new Form2();
             f2.Show();
+            
+
+        }
+
+        private void grabar()
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (System.IO.File.Exists(saveFileDialog1.FileName))
+                {
+                    string txt = saveFileDialog1.FileName;
+
+                    System.IO.StreamWriter txtguardar = System.IO.File.CreateText(txt);
+                    txtguardar.Write(richTextBox1.Text);
+                    txtguardar.Flush();
+                    txtguardar.Close();
+                }
+                else
+                {
+                    string txt = saveFileDialog1.FileName;
+
+                    System.IO.StreamWriter txtguardar = System.IO.File.CreateText(txt);
+                    txtguardar.Write(richTextBox1.Text);
+                    txtguardar.Flush();
+                    txtguardar.Close();
+                }
+            }
 
         }
 
@@ -86,15 +117,23 @@ namespace Presencial
             saveFileDialog1.Title = "Guardar archivo";
             saveFileDialog1.FileName = "";
             saveFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Tdos los archivos (*.*)|*.*";
-            saveFileDialog1.ShowDialog();
+            grabar();
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            PrintDialog printDialog1 = new PrintDialog();
-            printDialog1.ShowDialog();
-        }
+            PrintDialog p1 = new PrintDialog();
+            PrintDocument p2 = new PrintDocument();
+            OpenFileDialog op1 = new OpenFileDialog();
+            p1.Document = p2;
+            p1.AllowSelection = true;
+            p1.AllowSomePages = true;
 
+            if (p1.ShowDialog() == DialogResult.OK)
+            {
+                p2.Print();
+            }
+        }
         private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
         {
 
