@@ -29,7 +29,7 @@ namespace Presencial
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Title = "Abrir archivo";
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|  Archivos jpg (*.jpg)|*.jpg|Archivos png (*.png)|*.png|Todos los archivos (*.*)|*.*";
+            openFileDialog1.Filter = "Archivos txt (*.txt)|*.txt|Archivos rtf (*.rtf)|*.rtf|Archivos jpg (*.jpg)|*.jpg|Archivos png (*.png)|*.png|Todos los archivos (*.*)|*.*";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -43,14 +43,12 @@ namespace Presencial
                 }
                 else if (openFileDialog1.FileName.EndsWith("jpg"))
                 {
-                    var imagen = Image.FromFile(openFileDialog1.FileName);
-                    Clipboard.SetImage(imagen);
+                    Clipboard.SetImage(Image.FromFile(openFileDialog1.FileName));
                     richTextBox1.Paste();
                 }
                 else if (openFileDialog1.FileName.EndsWith("png"))
                 {
-                    var imagen = Image.FromFile(openFileDialog1.FileName);
-                    Clipboard.SetImage(imagen);
+                    Clipboard.SetImage(Image.FromFile(openFileDialog1.FileName));
                     richTextBox1.Paste();
                 }
             }

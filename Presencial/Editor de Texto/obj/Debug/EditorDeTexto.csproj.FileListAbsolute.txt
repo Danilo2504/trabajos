@@ -20,3 +20,14 @@ C:\Users\GOSTE\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\EditorDeTex
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.exe
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.pdb
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\bin\Debug\Presencial.exe.config
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\bin\Debug\Presencial.exe
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\bin\Debug\Presencial.pdb
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\EditorDeTexto.csprojAssemblyReference.cache
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.Form1.resources
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.Form2.resources
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.Properties.Resources.resources
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\EditorDeTexto.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.exe
+C:\Users\Alumno\Desktop\trabajos\Presencial\Editor de Texto\obj\Debug\Presencial.pdb
