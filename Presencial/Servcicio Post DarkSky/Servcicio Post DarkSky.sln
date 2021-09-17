@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servcicio Post DarkSky", "Servcicio Post DarkSky.csproj", "{1D05F70A-AC11-4868-990B-AC5AD0A2EB73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D05F70A-AC11-4868-990B-AC5AD0A2EB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D05F70A-AC11-4868-990B-AC5AD0A2EB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D05F70A-AC11-4868-990B-AC5AD0A2EB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D05F70A-AC11-4868-990B-AC5AD0A2EB73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DD50EC-4DD3-4F07-9F3E-5606364C0EFC}
+	EndGlobalSection
+EndGlobal
