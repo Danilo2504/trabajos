@@ -23,7 +23,13 @@ namespace Servcicio_Post_DarkSky
         {
             InitializeComponent();
         }
-
+        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
+        {
+            // Unix timestamp is seconds past epoch
+            DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            dateTime = dateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+            return dateTime;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string sURL;
@@ -31,7 +37,7 @@ namespace Servcicio_Post_DarkSky
             JObject json;
             Stream objStream;
 
-            sURL = "https://api.darksky.net/forecast/b4497c8a6b18bf75776b7fd997f2b90a/-34.6119666,-58.4030375?lang=es&units=ca";            
+            sURL = "https://api.darksky.net/forecast/b4497c8a6b18bf75776b7fd997f2b90a/-34.6119666,-58.4030375?lang=es&units=ca";
             wrGETURL = WebRequest.Create(sURL);
             objStream = wrGETURL.GetResponse().GetResponseStream();
             StreamReader objReader = new StreamReader(objStream);
@@ -47,21 +53,50 @@ namespace Servcicio_Post_DarkSky
                 sLine = objReader.ReadLine();
                 //if (sLine != null)
                 //    MessageBox.Show(sLine);                    
-                
+
             }
             //MessageBox.Show(sLinePrev);
 
             json = JObject.Parse(sLinePrev);
 
             pictureBox1.Image = Image.FromFile("imgs/" + json["daily"]["data"][0]["icon"].ToString() + ".jpg");
-            pictureBox9.Image = Image.FromFile("imgs/" + json["daily"]["data"][1]["icon"].ToString() + ".jpg");
-            pictureBox3.Image = Image.FromFile("imgs/" + json["daily"]["data"][2]["icon"].ToString() + ".jpg");
-            pictureBox4.Image = Image.FromFile("imgs/" + json["daily"]["data"][3]["icon"].ToString() + ".jpg");
-            pictureBox5.Image = Image.FromFile("imgs/" + json["daily"]["data"][4]["icon"].ToString() + ".jpg");
-            pictureBox6.Image = Image.FromFile("imgs/" + json["daily"]["data"][5]["icon"].ToString() + ".jpg");
-            pictureBox7.Image = Image.FromFile("imgs/" + json["daily"]["data"][6]["icon"].ToString() + ".jpg");
-            pictureBox8.Image = Image.FromFile("imgs/" + json["daily"]["data"][7]["icon"].ToString() + ".jpg");
+            pictureBox2.Image = Image.FromFile("imgs/" + json["daily"]["data"][0]["icon"].ToString() + ".jpg");
+            pictureBox3.Image = Image.FromFile("imgs/" + json["daily"]["data"][1]["icon"].ToString() + ".jpg");
+            pictureBox4.Image = Image.FromFile("imgs/" + json["daily"]["data"][2]["icon"].ToString() + ".jpg");
+            pictureBox5.Image = Image.FromFile("imgs/" + json["daily"]["data"][3]["icon"].ToString() + ".jpg");
+            pictureBox6.Image = Image.FromFile("imgs/" + json["daily"]["data"][4]["icon"].ToString() + ".jpg");
+            pictureBox7.Image = Image.FromFile("imgs/" + json["daily"]["data"][5]["icon"].ToString() + ".jpg");
+            pictureBox8.Image = Image.FromFile("imgs/" + json["daily"]["data"][6]["icon"].ToString() + ".jpg");
+            pictureBox9.Image = Image.FromFile("imgs/" + json["daily"]["data"][7]["icon"].ToString() + ".jpg");
 
+            DateTime d = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][0]["time"]));
+            label3.Text = d.DayOfWeek.ToString();
+            
+            DateTime a = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][1]["time"]));
+            label4.Text = a.DayOfWeek.ToString();
+
+            DateTime b = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][2]["time"]));
+            label5.Text = b.DayOfWeek.ToString();
+
+            DateTime c = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][3]["time"]));
+            label6.Text = c.DayOfWeek.ToString();
+
+            DateTime f = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][4]["time"]));
+            label7.Text = f.DayOfWeek.ToString();
+
+            DateTime g = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][5]["time"]));
+            label8.Text = g.DayOfWeek.ToString();
+
+            DateTime h = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][6]["time"]));
+            label9.Text = h.DayOfWeek.ToString();
+
+            DateTime j = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][7]["time"]));
+            label10.Text = j.DayOfWeek.ToString();
+
+            DateTime k = UnixTimeStampToDateTime(Convert.ToDouble(json["daily"]["data"][7]["time"]));
+            label11.Text = k.DayOfWeek.ToString();
+
+            label2.Text = "°"+json["currently"]["temperature"].ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -90,6 +125,16 @@ namespace Servcicio_Post_DarkSky
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

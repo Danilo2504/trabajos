@@ -1,0 +1,9 @@
+A) Los estados de los archivos son:
+Untracked
+Tracked
+Unmodified
+Modified
+
+B) Se crea en el Working Directory y tiene como estado Untracked
+
+C) usa usa el comando git add . para pasar el archivo al staged area y despues el git commit -m "mensaje" para pasarlo al directorio local
