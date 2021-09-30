@@ -2,9 +2,9 @@ unmodified = Es cuendo el mismo archivo esta en el repositorio y en el directori
 
 git config -l: comando para listar los usuarios que tengan una cuenta abierta
 git config --global --unset-all user.name Danilo2504: Comado para quitar todos los nombres de usuario.
-git config --global --unser-all user.mail<<o email>> danilobautista2004@gmail.com: Comando para quitar todos los mail/email de los usuarios.
+git config --global --unser-all user.email<<o email>> danilobautista2004@gmail.com: Comando para quitar todos los mail/email de los usuarios.
 git config --global --add user.name pilasmauri: Comando para agregar un nombre de usuario
-git config --global --add user.mail<<o email>> pilasmauri@gmail.com: Comando para agregar mail/email de usuario.
+git config --global --add user.email<<o mail>> pilasmauri@gmail.com: Comando para agregar mail/email de usuario.
 
 untracked: archivo creado, o copiado y este archivo solo esta en el directorio de trabajo.
 staged: archivo agregado (add .) y se encuentra en el staging area y el working directory.
