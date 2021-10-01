@@ -1,0 +1,10 @@
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\bin\Debug\Reproductor de Audio.exe.config
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\bin\Debug\Reproductor de Audio.exe
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\bin\Debug\Reproductor de Audio.pdb
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor de Audio.csprojAssemblyReference.cache
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor_de_Audio.Form1.resources
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor_de_Audio.Properties.Resources.resources
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor de Audio.csproj.GenerateResource.cache
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor de Audio.csproj.CoreCompileInputs.cache
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor de Audio.exe
+C:\Users\GOSTE\Desktop\trabajos\Presencial\Reproductor de Audio\obj\Debug\Reproductor de Audio.pdb
