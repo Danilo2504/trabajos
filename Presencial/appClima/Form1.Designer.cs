@@ -210,9 +210,9 @@ namespace Servcicio_Post_DarkSky
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label7.Location = new System.Drawing.Point(407, 305);
+            this.label7.Location = new System.Drawing.Point(389, 305);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 30);
+            this.label7.Size = new System.Drawing.Size(107, 30);
             this.label7.TabIndex = 16;
             this.label7.Text = "Dia 4";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

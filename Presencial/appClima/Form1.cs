@@ -97,7 +97,7 @@ namespace Servcicio_Post_DarkSky
             timer1.Start();
             label12.Text = DateTime.Now.ToString("HH:mm:ss");
 
-            label1.Text = "Balvanera, CABA";
+            label1.Text = "Buenos Aires, CABA";
 
         }
 

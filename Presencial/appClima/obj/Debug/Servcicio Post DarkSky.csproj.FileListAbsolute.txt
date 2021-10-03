@@ -36,3 +36,15 @@ C:\Users\GOSTE\Desktop\trabajos\Presencial\Servcicio Post DarkSky\obj\Debug\Serv
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Servcicio Post DarkSky\obj\Debug\Servcicio Post DarkSky.csproj.CopyComplete
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Servcicio Post DarkSky\obj\Debug\Servcicio Post DarkSky.exe
 C:\Users\GOSTE\Desktop\trabajos\Presencial\Servcicio Post DarkSky\obj\Debug\Servcicio Post DarkSky.pdb
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\bin\Debug\Servcicio Post DarkSky.exe.config
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\bin\Debug\Servcicio Post DarkSky.exe
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\bin\Debug\Servcicio Post DarkSky.pdb
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\bin\Debug\Newtonsoft.Json.xml
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.csprojAssemblyReference.cache
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio_Post_DarkSky.Form1.resources
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio_Post_DarkSky.Properties.Resources.resources
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.csproj.GenerateResource.cache
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.csproj.CoreCompileInputs.cache
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.csproj.CopyComplete
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.exe
+C:\Users\psarmiento20_11022\Desktop\trabajos\Presencial\appClima\obj\Debug\Servcicio Post DarkSky.pdb
